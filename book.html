@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Travel Agency Website</title>
+</head>
+
+    <section class="sub-Header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+               
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="book.html">BOOK</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Book Now</h1>
+
+    </section>
+   <!-----------Book Now------>
+   <section class="book">
+        <h1>Book Now Your Dream Travel</h1>
+        <div class="row">
+            <div class="book-col">
+                <form action="" method="post" id="Booking-form">
+                    <div class="form-group1">
+                      <label for="from" class="lab">From:</label>
+                      <select id="from" name="from">
+                        <option value="Manila">Manila</option>
+                        <option value="Cebu">Cebu</option>
+                        <option value="Davao">Davao</option>
+                        <option value="Boracay">Boracay</option>
+                      </select>
+                    </div>
+                    <div class="form-group1">
+                      <label for="to" class="lab">To:</label>
+                      <select id="to" name="to">
+                        <option value="Manila">Manila</option>
+                        <option value="Cebu">Cebu</option>
+                        <option value="Davao">Davao</option>
+                        <option value="Boracay">Boracay</option>
+                      </select>
+                    </div>
+
+                    
+                    <div class="form-group2">
+                      <div class="first">
+                        <input type="text" id="Fname" name="Fname" placeholder="Full Name"> 
+                      </div>
+                      
+                      <div class="first">
+                         <input type="email" id="email2" name="email2" placeholder="Email"> <br>
+                     </div>
+                      
+                   
+                     <div class="second">
+                      <input type="Number" id="contact-number" name="contact-number" placeholder="Contact number">
+                     </div>
+
+                     <div class="second">
+                      <input type="text" id="Add" name="add" placeholder="Address">
+                     </div>
+
+                     <div class="third">
+                      <label for="arive" class="lab">Arrivals:</label>
+                      <input type="date" id="arrivals" name="arrivals" placeholder="Arrivals">
+                     </div>
+
+                     <div class="third">
+                      <label for="leave" class="lab">Leaving:</label>
+                      <input type="date" id="leaving" name="leaving" placeholder="Leaving">
+                     </div>
+                    
+                     <div class="fourth">
+                      <label for="class-type" class="lab">Class Type:</label>
+                      <select id="class-type" name="class-type">
+                        <option value="economy">Economy</option>
+                        <option value="business">Business</option>
+                        <option value="first-class">First Class</option>
+                      </select>
+                     </div>
+                     
+                    <div class="fourth">
+                      <label for="num-passengers" class="lab">Number of Passengers:</label>
+                      <input type="number" id="num-passengers" name="num-passengers" min="1" max="20">
+                    </div><br>
+                     
+                    
+                      <button type="submit" class="hero-btn red-btn" id="submitBtn">Book Now</button>
+                   
+                  </form>
+            </div>
+        </div>
+        
+   </section>
+ 
+    <!------------------Footer---------->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Travel Agency is a team of professionals dedicated to providing exceptional services in online booking. 
+          Our mission is to speed up the process of a booking for a flight and we believe in this website it will help other people that struggling booking walk-in progress. 
+          We value our clients and work closely with them to develop customized solutions that meet their specific needs. </p>
+          <div class="icons">
+              <a href="https://www.facebook.com/profile.php?id=100090759711822"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/AgcTravel59168"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.instagram.com/travel_jcm2/"><i class="fa fa-instagram"></i></a>
+              
+          </div>
+          <p>Made with <i class="fa fa-heart-o"></i> By JCM</p>
+  </section>
+
+
+    <!-------------------JAVASCRIPT------------------------------>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-firestore.js"></script>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>

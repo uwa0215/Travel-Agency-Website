@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Travel Agency Website</title>
+</head>
+
+    <section class="sub-Header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+               
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="book.html">BOOK</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+
+    </section>
+    <!-------About us Content----------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Start your next adventure with us.</h1>
+                <p>"Welcome to our travel agency website, where adventure awaits! Are you ready to explore the world? Whether you're dreaming of a tropical paradise, an exotic cultural experience, or a thrilling adventure, we've got you covered.</p>
+                <p>At our travel agency, we specialize in creating unforgettable experiences for our clients. We understand that travel is not just about getting from point A to point B - it's about the journey, the people you meet, the sights you see, and the memories you make.</p>
+                <p>Our team of expert travel advisors is dedicated to helping you plan the trip of a lifetime. We offer a wide range of travel services, all tailored to your unique needs and preferences. So why wait? Let's start planning your next adventure today!"</p>
+                    <a href="services.html" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="Images/logo.png" >
+            </div>
+        </div>
+    </section>
+  
+    <!------------------Footer---------->
+    <section class="footer">
+        <h4>About Us</h4>
+        
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100090759711822"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/AgcTravel59168"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/travel_jcm2/"><i class="fa fa-instagram"></i></a>
+            
+        </div>
+            <p>Made with <i class="fa fa-heart-o"></i> By JCM</p>
+    </section>
+
+
+    <!-------------------JAVASCRIPT------------------------------>
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
